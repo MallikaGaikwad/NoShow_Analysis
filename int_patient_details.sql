@@ -2,12 +2,11 @@ SELECT
     PatientID
     ,Age
     ,Gender
-    ,Hypertension as Has_Hyptertension
+    ,Hipertension as Has_Hyptertension
     ,Diabetes as Has_Diabetes
     ,Alcoholism as Has_Alcoholism
-    ,Handicap as Is_Handicap
+    ,Handcap as Is_Handicap
+
+INTO silver.int_patient_details 
 
 FROM bronze.stg_noshows
-
-
-select * from bronze.stg_noshows
